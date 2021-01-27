@@ -24,6 +24,8 @@ class DetailViewController: UIViewController {
         guard let totalNumberOfImages = numberOfImages else { return }
 
         title = "Picture \(selectedImageNumber + 1) of \(totalNumberOfImages)"
+        // Cria um UIBarButtonItem e coloca na navbar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped)) // o selector diz que metodo deve ser chamado
 
         // Verifica se o nome de uma imagem foi passada, e coloca ela no imageView
         guard let imageToLoad = selectedImageName else { return }
@@ -43,15 +45,18 @@ class DetailViewController: UIViewController {
         navigationController?.hidesBarsOnTap = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Faz com que seja possivel compartilhar a imagem
+    // sempre que chamar por um selector, por @objc
+    @objc func shareTapped() {
+        // Pega a img do imageView e transforma em data jpeg
+        guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+            print("No image found")
+            return
+        }
+        
+        // Cria e chama o UIActivityViewController -> Método do iOS para compartilhar conteúdo
+        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: []) // Aqui se passa um array de itens para compartilhar, e um array de servicos do app que devem estar na lista
+        activityViewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem // Aqui diz de onde ele deve aparecer, mas como no iOS é full screen, só tem efeito no ipad
+        present(activityViewController, animated: true)
     }
-    */
-
 }
