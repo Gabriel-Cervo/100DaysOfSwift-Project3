@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100DaysOfSwift-Project1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100DaysOfSwift-Project3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8462DF7125BD989F00C737A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8462DF7325BD989F00C737A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8462DF7525BD989F00C737A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		8462DF6F25BD989F00C737A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project1.app */,
+				8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8462DF6D25BD989F00C737A1 /* 100DaysOfSwift-Project1 */ = {
+		8462DF6D25BD989F00C737A1 /* 100DaysOfSwift-Project3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8462DF8225BD98A300C737A1 /* Build configuration list for PBXNativeTarget "100DaysOfSwift-Project1" */;
+			buildConfigurationList = 8462DF8225BD98A300C737A1 /* Build configuration list for PBXNativeTarget "100DaysOfSwift-Project3" */;
 			buildPhases = (
 				8462DF6A25BD989F00C737A1 /* Sources */,
 				8462DF6B25BD989F00C737A1 /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "100DaysOfSwift-Project1";
+			name = "100DaysOfSwift-Project3";
 			productName = "100DaysOfSwift-Project1";
-			productReference = 8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project1.app */;
+			productReference = 8462DF6E25BD989F00C737A1 /* 100DaysOfSwift-Project3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8462DF6D25BD989F00C737A1 /* 100DaysOfSwift-Project1 */,
+				8462DF6D25BD989F00C737A1 /* 100DaysOfSwift-Project3 */,
 			);
 		};
 /* End PBXProject section */
@@ -339,12 +339,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "100DaysOfSwift-Project1/Info.plist";
+				INFOPLIST_FILE = "100DaysOfSwift-Project3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.joaocervo.-00DaysOfSwift-Project1";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.joaocervo.-00DaysOfSwift-Project3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,12 +357,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "100DaysOfSwift-Project1/Info.plist";
+				INFOPLIST_FILE = "100DaysOfSwift-Project3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.joaocervo.-00DaysOfSwift-Project1";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.joaocervo.-00DaysOfSwift-Project3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +381,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8462DF8225BD98A300C737A1 /* Build configuration list for PBXNativeTarget "100DaysOfSwift-Project1" */ = {
+		8462DF8225BD98A300C737A1 /* Build configuration list for PBXNativeTarget "100DaysOfSwift-Project3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8462DF8325BD98A300C737A1 /* Debug */,
