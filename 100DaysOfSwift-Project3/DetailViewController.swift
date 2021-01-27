@@ -54,8 +54,13 @@ class DetailViewController: UIViewController {
             return
         }
         
+        guard let imageName = selectedImageName else {
+            print("Can't get the image name!")
+            return
+        }
+
         // Cria e chama o UIActivityViewController -> Método do iOS para compartilhar conteúdo
-        let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: []) // Aqui se passa um array de itens para compartilhar, e um array de servicos do app que devem estar na lista
+        let activityViewController = UIActivityViewController(activityItems: [imageName, image], applicationActivities: []) // Aqui se passa um array de itens para compartilhar, e um array de servicos do app que devem estar na lista
         activityViewController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem // Aqui diz de onde ele deve aparecer, mas como no iOS é full screen, só tem efeito no ipad
         present(activityViewController, animated: true)
     }
